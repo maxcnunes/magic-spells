@@ -29,6 +29,10 @@ body {
   letter-spacing: -1px;
 }
 
+#container h1 img {
+  width: 50px;
+}
+
 #container ul {
   color: #46256F;
 }
@@ -42,6 +46,8 @@ body {
 #container p.list-group-item-text { font-size: 12px;  }
 
 #wand{
+  text-align: center;
+  margin: 5px 0 15px 0;
   animation: animationFrames linear 1s;
   animation-iteration-count: 1;
   -webkit-animation: animationFrames linear 1s;
