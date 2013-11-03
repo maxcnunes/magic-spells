@@ -1,0 +1,23 @@
+<div id="magic-board">
+  <h1>Magic Verbs Board</h1>
+  <table class="table-responsive">
+    <thead>
+      <tr>
+        <th class="correct">Correct</th>
+        <th>Inifitive</th>
+        <th>Simple Past</th>
+        <th>Past Participle</th>
+        <th class="wrong">Wrong</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="round in rounds">
+        <td class="correct">{{ round.correctWizards }}</td>
+        <td>{{ round.spell.infinitive }}</td>
+        <td>{{ round.spell.simplePast }}</td>
+        <td>{{ round.spell.pastParticiple }}</td>
+        <td class="wrong">{{ round.wrongWizards }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
