@@ -1,7 +1,11 @@
 <h1>Who is doing this magic?</h1>
-<ul class="list-group">
-  <li ng-repeat="wizard in wizards" class="list-group-item">
+<div class="list-group">
+  <a href="#" ng-repeat="wizard in wizards" class="list-group-item">
+    <span class="badge">
+      <!--{{student.success}}-->
+      √
+    </span>
     {{ wizard.name }}
-  </li>
-</ul>
+  </a>
+</div>
 <a href="" class="btn btn-primary btn-lg btn-block">Lets Magic</a>

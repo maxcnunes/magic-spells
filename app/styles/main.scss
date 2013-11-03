@@ -2,6 +2,8 @@ $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import "bootstrap-sass/lib/bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Pirata+One);
+@import url(http://fonts.googleapis.com/css?family=Fondamento);
 
 /* Put your CSS here */
 html, body {
@@ -10,8 +12,12 @@ html, body {
 
 body {
   background: #16091B;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Fondamento', cursive;
   color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Pirata One', cursive;
 }
 
 #cover {
