@@ -15,6 +15,10 @@ angular.module('magicSpellsApp', [
         templateUrl: 'views/houses.html',
         controller: 'WizardHousesCtrl'
       })
+      .when('/current', {
+        templateUrl: 'views/current.html',
+        controller: 'CurrentWizardsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
