@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('magicVerbsApp', [
+angular.module('magicSpellsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize'
@@ -10,6 +10,10 @@ angular.module('magicVerbsApp', [
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/houses', {
+        templateUrl: 'views/houses.html',
+        controller: 'WizardHousesCtrl'
       })
       .otherwise({
         redirectTo: '/'

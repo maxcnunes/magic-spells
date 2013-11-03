@@ -1,22 +1,22 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: WizardHousesCtrl', function () {
 
   // load the controller's module
   beforeEach(module('magicSpellsApp'));
 
-  var MainCtrl,
+  var WizardHousesCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl= $controller('MainCtrl', {
+    WizardHousesCtrl = $controller('WizardHousesCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of wizards to the scope', function () {
-    expect(scope.wizards.length).toBe(5);
+  it('should attach a list of wizard houses to the scope', function () {
+    expect(scope.houses.length).toBe(6);
   });
 });

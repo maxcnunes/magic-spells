@@ -14,6 +14,16 @@ body {
   color: #fff;
 }
 
+#cover {
+  text-align: center;
+}
+#cover img { width: 90%; }
+#container h1 {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
 #container {
   margin: 50px auto 0 auto;
   max-width: 500px;
@@ -23,15 +33,7 @@ body {
   border-radius: 6px;
 }
 
-#container h1 {
-  font-size: 50px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 
-#container h1 img {
-  width: 50px;
-}
 
 #container ul {
   color: #46256F;
