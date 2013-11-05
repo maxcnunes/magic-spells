@@ -3,7 +3,7 @@ magic-spells
 
 ### Configuring 
 
-```shell
+```bash
 # install rvm
 url -L https://get.rvm.io | bash -s stable
 
