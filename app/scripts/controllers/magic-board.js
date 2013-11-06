@@ -2,14 +2,16 @@
 
 angular.module('magicSpellsApp')
 .controller('MagicBoardCtrl', function ($scope) {
-  var wrongWizards = 'Max, Rafael';
-
-  var correctWizards = 'Mitchel, Maycon, Vanessa';
 
   var round = {
     spell: { infinitive: "Do, Does", simplePast: "Did", pastParticiple: "Done"  },
-  wrongWizards: wrongWizards,
-  correctWizards: correctWizards
+    results: [
+      { wizard: 'Max', correct: false, picture: '/images/users/max.jpg' },
+      { wizard: 'Rafael', correct: true, picture: '/images/users/vanessa.jpg' },
+      { wizard: 'Mitchel', correct: true, picture: '/images/users/mitchel.jpg' },
+      { wizard: 'Maycon', correct: true, picture: '/images/users/maycon.jpg' },
+      { wizard: 'Vanessa', correct: true, picture: '/images/users/rafael.jpg' }
+    ]
   };
 
   var rounds = [];
