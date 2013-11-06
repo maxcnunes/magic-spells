@@ -3,7 +3,6 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import "bootstrap-sass/lib/bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Pirata+One);
-@import url(http://fonts.googleapis.com/css?family=Fondamento);
 
 /* Put your CSS here */
 html, body {
@@ -12,7 +11,7 @@ html, body {
 
 body {
   background: #16091B;
-  font-family: 'Fondamento', cursive;
+  font-family: Tahoma, cursive;
   color: #fff;
 }
 
@@ -53,9 +52,8 @@ h1, h2, h3, h4, h5 {
 
 #container p.list-group-item-text { font-size: 12px;  }
 
-#magic-board table td {
-  text-align: center;
-}
+#magic-board table { width: 100%; }
+#magic-board table td { text-align: center; }
 
 #magic-board table th {
   font-size: 0.8em;
@@ -66,13 +64,11 @@ h1, h2, h3, h4, h5 {
   border-bottom: 1px solid #000;
 }
 
-#magic-board table>tbody>tr>td.correct {
-  background-color: #428bca;
+#magic-board table>tbody>tr>td.verbs {
+  /*background-color: #000;*/
   font-size: 0.8em;
-}
-#magic-board table>tbody>tr>td.wrong {
-  background-color: #d9534f;
-  font-size: 0.8em;
+  min-width: 30%;
+  padding:0 5px;
 }
 
 #magic-board tr:nth-child(odd) td {
@@ -93,6 +89,26 @@ h1, h2, h3, h4, h5 {
   -ms-animation: animationFrames linear 1s;
   -ms-animation-iteration-count: 1;
 }
+
+
+th.user_circ_picture img {
+  border: 1px solid #ccc;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  max-width: 50px;
+}
+
+
+
+
+
+
+
+
 
 @keyframes animationFrames{
   0% {
