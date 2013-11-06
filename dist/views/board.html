@@ -1,0 +1,30 @@
+<div id="magic-board">
+  <h1>Magic Verbs Board</h1>
+  <table class="table-responsive">
+    <thead>
+      <tr>
+        <th class="verbs">Verbs</th>
+        <th ng-repeat="result in rounds[0].results" class="user_circ_picture">
+          <img src="{{ result.picture }}">
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="round in rounds">
+        <td class="verbs">
+          <div>{{ round.spell.infinitive }}</div>
+          <div>{{ round.spell.simplePast }}</div>
+          <div>{{ round.spell.pastParticiple }}</div>
+        </td>
+        <td ng-repeat="result in round.results">
+          <a ng-show="result.correct" class="btn btn-primary" href="#">
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+          </a>
+          <a ng-show="!result.correct" class="btn btn-danger" href="#">
+            <i class="glyphicon glyphicon-thumbs-down"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
