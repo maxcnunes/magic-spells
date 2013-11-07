@@ -17,6 +17,6 @@ describe('Controller: WizardHousesCtrl', function () {
   }));
 
   it('should attach a list of wizard houses to the scope', function () {
-    expect(scope.houses.length).toBe(6);
+    expect(scope.houses.length).toBe(9);
   });
 });

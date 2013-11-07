@@ -75,6 +75,21 @@ h1, h2, h3, h4, h5 {
   background-color: #000;
 }
 
+a.team-logo {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  display: block;
+  padding: 5px;
+  margin: 10px 0;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+a.team-logo img{
+  width: 100%;
+}
+
 #wand{
   text-align: center;
   margin: 25px 0 25px 0;
