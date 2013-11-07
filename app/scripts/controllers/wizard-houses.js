@@ -4,7 +4,6 @@ angular.module('magicSpellsApp')
   .controller('WizardHousesCtrl', function ($scope, $filter) {
     $scope.houses = [
       { name: 'Eagles', picture: 'eagles.jpg' },
-      { name: 'Flag', picture: 'flag.jpg' },
       { name: 'Foxewe', picture: 'foxewe.jpg' },
       { name: 'Horseal', picture: 'horseal.jpg' },
       { name: 'Lioncow', picture: 'lioncow.jpg' },
@@ -13,6 +12,6 @@ angular.module('magicSpellsApp')
       { name: 'Russian Owls', picture: 'russian_owls.jpg' },
       { name: 'Turkeywolf', picture: 'turkeywolf.jpg' }
     ];
-    
-    $scope.groupedHouses = $filter('group')($scope.houses, 2);
+
+    $scope.groupedHouses = $filter('group')($scope.houses, 4);
   });
