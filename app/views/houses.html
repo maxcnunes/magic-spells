@@ -1,5 +1,8 @@
 <h1>Wizard Houses</h1>
-<a href="#/current" ng-repeat="house in houses" title="{{ house.name }}">
-  <img src="images/{{ house.picture }}" />
-</a>
-</ul>
+<div class="row" ng-repeat="group in groupedHouses">
+  <div class="col-md-6" ng-repeat="house in group">
+    <a href="#/current" title="{{ house.name }}">
+      <img src="images/teams/{{ house.picture }}" class="img-thumbnail team-logo" />
+    </a>
+  </div>
+</div>
