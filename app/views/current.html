@@ -1,9 +1,9 @@
 <h1>Who is doing this magic?</h1>
 <div class="list-group">
-  <a href="#" ng-repeat="wizard in wizards" class="list-group-item">
+  <a ng-href='#here' ng-click="toggleSelect($event, $index)" ng-repeat="wizard in wizards" class="list-group-item">
     <span class="badge">
-      <!--{{student.success}}-->
-      √
+      <i ng-show="wizard.present" class="glyphicon glyphicon-ok"></i>
+      <i ng-show="!wizard.present" class="glyphicon glyphicon-remove"></i>
     </span>
     {{ wizard.name }}
   </a>

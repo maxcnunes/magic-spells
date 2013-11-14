@@ -6,7 +6,8 @@ describe('Controller: CurrentWizardsCtrl', function () {
   beforeEach(module('magicSpellsApp'));
 
   var CurrentWizardsCtrl,
-    scope;
+    scope,
+    mockClickEvnt = { preventDefault : function(){} };
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
@@ -18,5 +19,11 @@ describe('Controller: CurrentWizardsCtrl', function () {
 
   it('should attach a list of wizards to the scope', function () {
     expect(scope.wizards.length).toBe(5);
+  });
+
+  it('should toogle selected scope', function () {
+    scope.wizards[0].present = true;
+    scope.toggleSelect(mockClickEvnt, 0);
+    expect(scope.wizards[0].present).toBe(false);
   });
 });
