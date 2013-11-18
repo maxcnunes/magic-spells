@@ -1,8 +1,17 @@
 <h1>
   Abracadabra
-  <span class="badge pull-right">7</span>
+  <span id="round-num" class="badge pull-right">{{round}}</span>
 </h1>
 <div id="wand">
-  <img src="https://cdn1.iconfinder.com/data/icons/Basic_set2_Png/64/wand.png" />
+  <a href="#">
+    <img src="https://cdn1.iconfinder.com/data/icons/Basic_set2_Png/64/wand.png" />
+  </a>
 </div>
-<a href="#/board" class="btn btn-primary btn-lg btn-block">Nex Magic</a>
+<a href="" class="btn btn-{{attemptColor}} btn-lg btn-block" ng-click="listenFirstWord($event)" ng-hide="lockedListen">
+  <i class="glyphicon glyphicon-headphones"></i>
+  Listen the first word
+</a>
+<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="goToNextPage()">
+  <i class="glyphicon glyphicon-circle-arrow-right"></i>
+  Next Magic
+</button>
