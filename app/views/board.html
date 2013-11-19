@@ -17,14 +17,24 @@
           <div>{{ round.spell.pastParticiple }}</div>
         </td>
         <td ng-repeat="result in round.results">
-          <a ng-show="result.correct" class="btn btn-primary" href="#">
+          <button type="button" ng-show="result.correct" class="btn btn-primary" ng-click="toggleCorrect(result)">
             <i class="glyphicon glyphicon-thumbs-up"></i>
-          </a>
-          <a ng-show="!result.correct" class="btn btn-danger" href="#">
+          </button>
+          <button type="button" ng-show="!result.correct" class="btn btn-danger" ng-click="toggleCorrect(result)">
             <i class="glyphicon glyphicon-thumbs-down"></i>
-          </a>
+          </button>
         </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <span>{{ calculateTotal() }}</span>
+        </td>
+        <td ng-repeat="result in rounds[0].results">
+          {{ calculateWizardTotal(result) }}
+        </td> 
       </tr>
     </tbody>
   </table>
+  
 </div>
