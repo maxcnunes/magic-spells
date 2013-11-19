@@ -15,3 +15,17 @@
   <i class="glyphicon glyphicon-circle-arrow-right"></i>
   Next Magic
 </button>
+
+<!-- Google Translate Example:
+<div cz-shortcut-listen="true">
+  <video controls="" autoplay="" name="media">
+    <source src="http://translate.google.co.uk/translate_tts?ie=UTF-8&amp;q=do&amp;tl=en&amp;total=1&amp;idx=0&amp;textlen=2&amp;prev=input" type="audio/mpeg">
+  </video>
+</div>-->
+
+<!-- HTML5 Audio tag example:
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video
+-->
+<audio id="magic-spell-audio" ng-hide="true" src="http://translate.google.co.uk/translate_tts?ie=UTF-8&amp;q={{currentWord}}&amp;tl=en&amp;total=1&amp;idx=0&amp;textlen=5&amp;prev=input" preload="auto" controls>
+  <p>Seu nevegador não suporta o elemento audio.</p>
+</audio>
