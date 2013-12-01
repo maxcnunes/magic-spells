@@ -1,25 +1,29 @@
 'use strict';
 
 angular.module('magicSpellsApp')
-  .controller('MagicSpellsCtrl', function ($scope, $location) {
+  .controller('MagicSpellsCtrl', function ($scope, $location, VerbService) {
     var attempts = 0,
-        words = ['fight', 'magic'];
+        words = [];
 
-    $scope.round = 1;
-    $scope.lockedListen = false;
-    $scope.attemptColor = 'primary';
-    $scope.currentWord = words[0];
-    $scope.listenFirstWord = function(event){
-      attempts += 1;
-      if(attempts === 1) {
-        $scope.attemptColor = 'danger';
-        listen();
-      } else if (attempts === 2){
-        listen();
-        $scope.lockedListen = true;
-      }
-      event.preventDefault();
-    };
+    VerbService.getRoundsVerbs(function(verbs){
+      words = verbs;
+      $scope.round = 1;
+      $scope.lockedListen = false;
+      $scope.attemptColor = 'primary';
+      $scope.currentWord = words[0].infinitive;
+      $scope.listenFirstWord = function(event){
+        attempts += 1;
+        if(attempts === 1) {
+          $scope.attemptColor = 'danger';
+          listen();
+        } else if (attempts === 2){
+          listen();
+          $scope.lockedListen = true;
+        }
+        event.preventDefault();
+      };
+    });
+
 
     var listen = function(){
         //
@@ -39,7 +43,7 @@ angular.module('magicSpellsApp')
 
     $scope.goToNextPage = function () {
       if($scope.round < 10){
-        $scope.currentWord = words[$scope.round];
+        $scope.currentWord = words[$scope.round].infinitive;
         $scope.round += 1;
         attempts = 0;
         $scope.lockedListen = false;

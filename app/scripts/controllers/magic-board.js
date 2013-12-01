@@ -1,10 +1,15 @@
 'use strict';
 
 angular.module('magicSpellsApp')
-.controller('MagicBoardCtrl', function ($scope) {
+.controller('MagicBoardCtrl', function ($scope, VerbService) {
+  var words;
+  VerbService.getRoundsVerbs(function(verbs) { words = verbs; });
+
+  var auxFakeRound = -1;
   var fakeRound = function() {
+    auxFakeRound += 1;
     return {
-      spell: { infinitive: "Do, Does", simplePast: "Did", pastParticiple: "Done"  },
+      spell: words[auxFakeRound],
       results: [
         { wizard: 'Max', correct: false, picture: '/images/users/max.jpg' },
         { wizard: 'Rafael', correct: true, picture: '/images/users/rafael.jpg' },
@@ -24,29 +29,29 @@ angular.module('magicSpellsApp')
 
 
   $scope.rounds = rounds;
-  
+
   $scope.toggleCorrect = function(item){
     item.correct = !item.correct;
   };
-  
+
   $scope.calculateWizardTotal = function(item){
     var total = 0;
     $scope.rounds.forEach( function(round) {
       round.results.forEach( function(result) {
         if(result.wizard === item.wizard && result.correct) {
-          total += 1;          
+          total += 1;
         }
       });
     });
     return total;
   };
-  
+
   $scope.calculateTotal = function(){
     var total = 0;
     $scope.rounds.forEach( function(round) {
       round.results.forEach( function(result) {
         if(result.correct) {
-          total += 1;          
+          total += 1;
         }
       });
     });
