@@ -2,7 +2,7 @@
 <div class="row" ng-repeat="group in groupedHouses">
   <div class="col-md-3" ng-repeat="house in group">
     <a href="#/current" title="{{ house.name }}" class="team-logo">
-      <img src="images/teams/{{ house.picture }}" />
+      <img src="{{ house.picture }}" />
     </a>
   </div>
 </div>

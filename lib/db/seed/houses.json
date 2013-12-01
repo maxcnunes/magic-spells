@@ -1,0 +1,10 @@
+[
+  { "name": "Eagles", "picture": "/images/teams/eagles.png" },
+  { "name": "Foxewe", "picture": "/images/teams/foxewe.png" },
+  { "name": "Horseal", "picture": "/images/teams/horseal.png" },
+  { "name": "Lioncow", "picture": "/images/teams/lioncow.png" },
+  { "name": "Monkeys in T-shirts", "picture": "/images/teams/monkeys_in_t-shirts.png" },
+  { "name": "Rubble Fish", "picture": "/images/teams/rubble_fish.png" },
+  { "name": "Russian Owls", "picture": "/images/teams/russian_owls.png" },
+  { "name": "Turkeywolf", "picture": "/images/teams/turkeywolf.png" }
+]

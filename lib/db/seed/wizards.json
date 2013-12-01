@@ -1,0 +1,7 @@
+[
+  { name: 'Max', picture: '/images/users/max.jpg' },
+  { name: 'Rafael', picture: '/images/users/rafael.jpg' },
+  { name: 'Mitchel', picture: '/images/users/mitchel.jpg' },
+  { name: 'Maycon', picture: '/images/users/maycon.jpg' },
+  { name: 'Vanessa', picture: '/images/users/vanessa.jpg' }
+]
