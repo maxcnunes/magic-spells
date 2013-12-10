@@ -16,7 +16,8 @@ angular.module('magicSpellsApp')
             categories: rounds
           },
           yAxis: {
-               title: { text: 'Points' },
+            min: 0,
+            title: { text: 'Points' },
           //labels: {
           //    formatter: function() { return this.value +'°' }
           //  }
