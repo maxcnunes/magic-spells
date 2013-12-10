@@ -46,6 +46,7 @@ app.configure('production', function(){
 // Routes
 app.get('/api/verbs', api.verbs);
 app.get('/api/houses', api.houses);
+app.get('/api/general-result', api.generalResult);
 
 // Start server
 var port = process.env.PORT || 3000;

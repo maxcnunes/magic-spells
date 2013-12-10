@@ -1,10 +1,18 @@
 [
-  { "name": "Eagles", "picture": "/images/teams/eagles.png" },
-  { "name": "Foxewe", "picture": "/images/teams/foxewe.png" },
-  { "name": "Horseal", "picture": "/images/teams/horseal.png" },
-  { "name": "Lioncow", "picture": "/images/teams/lioncow.png" },
-  { "name": "Monkeys in T-shirts", "picture": "/images/teams/monkeys_in_t-shirts.png" },
-  { "name": "Rubble Fish", "picture": "/images/teams/rubble_fish.png" },
-  { "name": "Russian Owls", "picture": "/images/teams/russian_owls.png" },
-  { "name": "Turkeywolf", "picture": "/images/teams/turkeywolf.png" }
+  { "name": "Eagles", "picture": "/images/teams/medium/eagles.png",
+    "pictureSmall": "/images/teams/small/eagles.png" },
+  { "name": "Foxewe", "picture": "/images/teams/medium/foxewe.png",
+    "pictureSmall": "/images/teams/small/foxewe.png" },
+  { "name": "Horseal", "picture": "/images/teams/medium/horseal.png",
+    "pictureSmall": "/images/teams/small/horseal.png" },
+  { "name": "Lioncow", "picture": "/images/teams/medium/lioncow.png",
+    "pictureSmall": "/images/teams/small/lioncow.png" },
+  { "name": "Monkeys in T-shirts", "picture": "/images/teams/medium/monkeys_in_t-shirts.png",
+    "pictureSmall": "/images/teams/small/monkeys_in_t-shirts.png" },
+  { "name": "Rubble Fish", "picture": "/images/teams/medium/rubble_fish.png",
+    "pictureSmall": "/images/teams/small/rubble_fish.png" },
+  { "name": "Russian Owls", "picture": "/images/teams/medium/russian_owls.png",
+    "pictureSmall": "/images/teams/small/russian_owls.png" },
+  { "name": "Turkeywolf", "picture": "/images/teams/medium/turkeywolf.png",
+    "pictureSmall": "/images/teams/small/turkeywolf.png" }
 ]

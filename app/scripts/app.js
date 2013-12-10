@@ -3,7 +3,8 @@
 angular.module('magicSpellsApp', [
   'ngCookies',
   'ngResource',
-  'ngSanitize'
+  'ngSanitize',
+  'highcharts-ng'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -26,6 +27,10 @@ angular.module('magicSpellsApp', [
       .when('/board', {
         templateUrl: 'views/board.html',
         controller: 'MagicBoardCtrl'
+      })
+      .when('/general', {
+        templateUrl: 'views/general-chart.html',
+        controller: 'GeneralChartCtrl'
       })
       .otherwise({
         redirectTo: '/'
