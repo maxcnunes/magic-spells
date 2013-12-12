@@ -10,7 +10,7 @@ angular.module('magicSpellsApp')
       $scope.chartConfig = {
         options: {
           chart: { type: 'spline', zoomType: 'x' },
-          title: { text: 'General Result' },
+          title: { text: 'Result' },
           legend: { itemMarginBottom: 15 },
           xAxis: {
             categories: rounds

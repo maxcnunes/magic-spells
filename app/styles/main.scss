@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5 {
   font-family: 'Pirata One', cursive;
 }
 
+#logo {
+  padding-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -10px;
+}
+
 #cover {
   text-align: center;
 }
@@ -31,7 +38,7 @@ h1, h2, h3, h4, h5 {
 
 #container {
   margin: 50px auto 0 auto;
-  max-width: 500px;
+  max-width: 550px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
