@@ -2,11 +2,13 @@
 
 angular.module('magicSpellsApp')
   .service('MagicService', function MagicService($http) {
-    var getGeneralResult = function () {
+    var currentHouse = '',
+    getGeneralResult = function () {
       return $http.get('/api/general-result');
     };
 
     return {
+      currentHouse: currentHouse,
       getGeneralResult: getGeneralResult
     };
   });

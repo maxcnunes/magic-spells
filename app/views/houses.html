@@ -1,9 +1,10 @@
-<header>
-  <h1><a id="logo" href="#/"><img src="/images/logo-small.png" /></a>Wizard Houses</h1>
-</header>
+<h1>
+  <a id="logo" href="#/"><img src="/images/logo-small.png" /></a>
+  Wizard Houses
+</h1>
 <div class="row" ng-repeat="group in groupedHouses">
   <div class="col-md-3" ng-repeat="house in group">
-    <a href="#/current" title="{{ house.name }}" class="team-logo">
+    <a href="#/current" title="{{ house.name }}" class="team-logo" ng-click="selectHouse()">
       <img src="{{ house.picture }}" />
     </a>
   </div>

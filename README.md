@@ -28,3 +28,16 @@ bower install
 # run the server
 grunt server
 ```
+
+Rules
+RED BOOKS
+==============
+- 4: Level 1
+- 4: Level 2
+- 2: Level 3
+
+BLUE BOOKS
+==============
+- 2: Level 1
+- 4: Level 2
+- 4: Level 3

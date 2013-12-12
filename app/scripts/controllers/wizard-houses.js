@@ -6,4 +6,8 @@ angular.module('magicSpellsApp')
       $scope.houses = houses;
       $scope.groupedHouses = $filter('group')($scope.houses, 4);
     });
+
+    $scope.selectHouse = function () {
+
+    };
   });
