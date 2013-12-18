@@ -2,24 +2,14 @@
 
 angular.module('magicSpellsApp')
   .controller('MagicSpellsCtrl', function ($scope, $location, VerbService) {
-    var attempts = 0,
-        words = [];
+    var words = [];
 
     VerbService.getRoundsVerbs(function(verbs){
       words = verbs;
       $scope.round = 1;
-      $scope.lockedListen = false;
-      $scope.attemptColor = 'primary';
       $scope.currentWord = words[0].infinitive;
       $scope.listenFirstWord = function(event){
-        attempts += 1;
-        if(attempts === 1) {
-          $scope.attemptColor = 'danger';
           listen();
-        } else if (attempts === 2){
-          listen();
-          $scope.lockedListen = true;
-        }
         event.preventDefault();
       };
     });
@@ -45,9 +35,6 @@ angular.module('magicSpellsApp')
       if($scope.round < 10){
         $scope.currentWord = words[$scope.round].infinitive;
         $scope.round += 1;
-        attempts = 0;
-        $scope.lockedListen = false;
-        $scope.attemptColor = 'primary';
       } else {
        $location.path("board");
       }
