@@ -32,6 +32,10 @@ angular.module('magicSpellsApp', [
         templateUrl: 'views/general-chart.html',
         controller: 'GeneralChartCtrl'
       })
+      .when('/individual-score', {
+        templateUrl: 'views/individual-score.html',
+        controller: 'IndividualScoreCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
