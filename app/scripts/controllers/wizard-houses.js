@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('magicSpellsApp')
-  .controller('WizardHousesCtrl', function ($scope, $filter, HouseService, $location, $timeout) {
+  .controller('WizardHousesCtrl', function ($scope, $filter, $location, $timeout, HouseService, MagicService) {
     $scope.playingSound = false;
     HouseService.getAll().success(function (houses) {
       $scope.houses = houses;
@@ -10,6 +10,7 @@ angular.module('magicSpellsApp')
 
     $scope.selectHouse = function (event, house) {
       $scope.playingSound = true;
+      MagicService.currentHouse = house;
       listen(house.sound);
       
       moveToNextPageAfterPlaySound();

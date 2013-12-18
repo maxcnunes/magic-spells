@@ -44,7 +44,7 @@ app.configure('production', function(){
 });
 
 // Routes
-app.get('/api/verbs', api.verbs);
+app.get('/api/verbs/:book', api.verbs);
 app.get('/api/houses', api.houses);
 app.get('/api/general-result', api.generalResult);
 

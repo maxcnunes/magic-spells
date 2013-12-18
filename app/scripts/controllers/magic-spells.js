@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('magicSpellsApp')
-  .controller('MagicSpellsCtrl', function ($scope, $location, VerbService) {
+  .controller('MagicSpellsCtrl', function ($scope, $location, VerbService, MagicService) {
     var words = [];
 
     VerbService.getRoundsVerbs(function(verbs){
@@ -12,7 +12,7 @@ angular.module('magicSpellsApp')
         listen();
         event.preventDefault();
       };
-    });
+    }, MagicService.currentHouse.book);
 
 
     var listen = function(){

@@ -2,7 +2,7 @@
 
 angular.module('magicSpellsApp')
   .service('MagicService', function MagicService($http) {
-    var currentHouse = '',
+    var currentHouse,
     wizards = [],
     presentWizards = [],
     getGeneralResult = function () {
