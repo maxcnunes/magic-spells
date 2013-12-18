@@ -1,22 +1,21 @@
 'use strict';
 
 angular.module('magicSpellsApp')
-.controller('MagicBoardCtrl', function ($scope, VerbService) {
+.controller('MagicBoardCtrl', function ($scope, VerbService, MagicService) {
   var words;
   VerbService.getRoundsVerbs(function(verbs) { words = verbs; });
 
   var auxFakeRound = -1;
   var fakeRound = function() {
     auxFakeRound += 1;
+    var results = [];
+    MagicService.getPresentWizards().forEach(function (wizard) {
+      wizard.correct = true;
+      results.push(wizard);
+    });
     return {
       spell: words[auxFakeRound],
-      results: [
-        { wizard: 'Max', correct: false, picture: '/images/users/max.jpg' },
-        { wizard: 'Rafael', correct: true, picture: '/images/users/rafael.jpg' },
-        { wizard: 'Mitchel', correct: true, picture: '/images/users/mitchel.jpg' },
-        { wizard: 'Maycon', correct: true, picture: '/images/users/maycon.jpg' },
-        { wizard: 'Vanessa', correct: true, picture: '/images/users/vanessa.jpg' }
-      ]
+      results: results
     };
   }
 
