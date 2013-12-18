@@ -9,7 +9,7 @@ angular.module('magicSpellsApp')
       $scope.round = 1;
       $scope.currentWord = words[0].infinitive;
       $scope.listenFirstWord = function(event){
-          listen();
+        listen();
         event.preventDefault();
       };
     });

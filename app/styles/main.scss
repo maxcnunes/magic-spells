@@ -89,7 +89,7 @@ h2#current-word {
   background-color: #000;
 }
 
-a.team-logo {
+button.team-logo {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background: #fff;
@@ -100,12 +100,19 @@ a.team-logo {
   line-height: 155px;
 }
 
+#loader {
+  background: url(/images/loader.gif) no-repeat center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
 #round-num { 
   font-family: Tahoma, cursive;
   font-size: 30px; 
 }
 
-a.team-logo img{
+button.team-logo img{
   width: 100%;
 }
 

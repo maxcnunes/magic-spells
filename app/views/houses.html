@@ -1,11 +1,14 @@
 <h1>
   <a id="logo" href="#/"><img src="/images/logo-small.png" /></a>
   Wizard Houses
+  <span id="loader" class="pull-right" ng-show="playingSound"></span>
 </h1>
 <div class="row" ng-repeat="group in groupedHouses">
   <div class="col-md-3" ng-repeat="house in group">
-    <a href="#/current" title="{{ house.name }}" class="team-logo" ng-click="selectHouse()">
+    <button type="button" title="{{ house.name }}" class="team-logo btn" ng-click="selectHouse($event, house)">
       <img ng-src="{{ house.picture }}" />
-    </a>
+    </button>
   </div>
 </div>
+<!-- HTML5 Audio tag example: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video -->
+<audio id="magic-team-audio" ng-hide="true" preload="auto" controls />

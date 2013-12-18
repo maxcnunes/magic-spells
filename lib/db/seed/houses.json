@@ -1,18 +1,10 @@
 [
-  { "name": "Eagles", "picture": "/images/teams/medium/eagles.png",
-    "pictureSmall": "/images/teams/small/eagles.png" },
-  { "name": "Foxewe", "picture": "/images/teams/medium/foxewe.png",
-    "pictureSmall": "/images/teams/small/foxewe.png" },
-  { "name": "Horseal", "picture": "/images/teams/medium/horseal.png",
-    "pictureSmall": "/images/teams/small/horseal.png" },
-  { "name": "Lioncow", "picture": "/images/teams/medium/lioncow.png",
-    "pictureSmall": "/images/teams/small/lioncow.png" },
-  { "name": "Monkeys in T-shirts", "picture": "/images/teams/medium/monkeys_in_t-shirts.png",
-    "pictureSmall": "/images/teams/small/monkeys_in_t-shirts.png" },
-  { "name": "Rubble Fish", "picture": "/images/teams/medium/rubble_fish.png",
-    "pictureSmall": "/images/teams/small/rubble_fish.png" },
-  { "name": "Russian Owls", "picture": "/images/teams/medium/russian_owls.png",
-    "pictureSmall": "/images/teams/small/russian_owls.png" },
-  { "name": "Turkeywolf", "picture": "/images/teams/medium/turkeywolf.png",
-    "pictureSmall": "/images/teams/small/turkeywolf.png" }
+  { "name": "Eagles", "picture": "/images/teams/medium/eagles.png", "pictureSmall": "/images/teams/small/eagles.png", "sound": "/sounds/teams/eagles.mp3" },
+  { "name": "Foxewe", "picture": "/images/teams/medium/foxewe.png", "pictureSmall": "/images/teams/small/foxewe.png", "sound": "/sounds/teams/foxewe.mp3" },
+  { "name": "Horseal", "picture": "/images/teams/medium/horseal.png", "pictureSmall": "/images/teams/small/horseal.png", "sound": "/sounds/teams/horseal.mp3" },
+  { "name": "Lioncow", "picture": "/images/teams/medium/lioncow.png", "pictureSmall": "/images/teams/small/lioncow.png", "sound": "/sounds/teams/lioncow.mp3" },
+  { "name": "Monkeys in T-shirts", "picture": "/images/teams/medium/monkeys_in_t-shirts.png", "pictureSmall": "/images/teams/small/monkeys_in_t-shirts.png", "sound": "/sounds/teams/monkeys.mp3" },
+  { "name": "Rubble Fish", "picture": "/images/teams/medium/rubble_fish.png", "pictureSmall": "/images/teams/small/rubble_fish.png", "sound": "/sounds/teams/rubblefish.mp3" },
+  { "name": "Russian Owls", "picture": "/images/teams/medium/russian_owls.png", "pictureSmall": "/images/teams/small/russian_owls.png", "sound": "/sounds/teams/russianowls.mp3" },
+  { "name": "Turkeywolf", "picture": "/images/teams/medium/turkeywolf.png", "pictureSmall": "/images/teams/small/turkeywolf.png", "sound": "/sounds/teams/turkeywolf.mp3" }
 ]
