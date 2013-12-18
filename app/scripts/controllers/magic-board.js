@@ -25,6 +25,11 @@ angular.module('magicSpellsApp')
   rounds.push(fakeRound());
   rounds.push(fakeRound());
   rounds.push(fakeRound());
+  rounds.push(fakeRound());
+  rounds.push(fakeRound());
+  rounds.push(fakeRound());
+  rounds.push(fakeRound());
+  rounds.push(fakeRound());
 
 
   $scope.rounds = rounds;
